@@ -1,0 +1,138 @@
+.home-preview{
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        .pigmentbio{
+            position: relative;
+            .main-image{
+                width: 100%;
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            .serum{
+                position: absolute;
+                top: 25%;
+                right: 20%;
+                img{
+                    width: 100%;
+                    max-width: 106.287px;
+                    height: auto;
+                }
+            }
+            .about-serum{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 7%;
+                p{
+                    color: #444A51;
+                    font-family: "Poppins", sans-serif;
+                    font-size: 13.583px;;
+                    font-style: normal;
+                    font-weight: 400;
+                }
+                .bold{
+                    font-weight: 600;
+                }
+                .blue{
+                    color: #009BC7;
+                }
+            }
+        }
+        .sensibio{
+            position: relative;
+            border-radius: 10px;
+            border: 1px solid #DB3333;
+            .main-image{
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    border-radius: 10px;
+                }
+            }
+            .product{
+                position: absolute;
+                top: 50%;
+                right: 10%;
+                transform: translateY(-55%);
+            }
+            .about-product{
+                position: absolute;
+                top: 5%;
+                left: 5%;
+                p{
+                    color: #444A51;
+                    font-family: "Poppins", sans-serif;
+                    font-size: 16.424px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+                .bold{
+                    font-weight: 600;
+                }
+            }
+            .other-inform{
+                position: absolute;
+                top: 60%;
+                left: 5%;
+                z-index: 5;
+                display: flex;
+                flex-direction: column;
+                gap: 6.46px;
+                p{
+                    color: #757575;
+                    font-family: "Poppins", sans-serif;
+                    font-size: 14.599px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 19.162px; /* 131.25% */
+                }
+                h4{
+                    color: #000;
+                    font-family: "Poppins", sans-serif;
+                    font-size: 16.424px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 19.162px;
+                }
+            }
+        }
+    }
+}
+@media (min-width:768px){
+    .home-preview{
+        padding: 4rem;
+        display: flex;
+        justify-content: center;
+        .container{
+            max-width: 1312px;
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-around;
+            .pigmentbio{
+                .serum{
+                    width: 106.287px;
+                    height: 253px;
+                    img{
+                        width: 100%;
+                        height: auto;
+                        object-fit: cover;
+                    }
+                }
+                .about-serum{
+                    p{
+                        font-size: 28px;
+                    }
+                }
+                
+            }
+        }
+    }
+}

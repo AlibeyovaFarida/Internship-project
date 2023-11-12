@@ -1,0 +1,248 @@
+.footer{
+    padding: 1.25rem 1rem;
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+        .footer-top{
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            .NAOS{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .NAOS-logo{
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    padding: 2rem 0;
+                }
+                .NAOS-desc{
+                    padding: 0 15%;
+                    color: #282828;
+                    text-align: center;
+                    font-family: "Poppins", sans-serif;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+            .line{
+                display: none;
+            }
+            .footer-main{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 2.5rem;
+                .brends{
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    div{
+                        .social-media-accounts{
+                            display: none;
+                        }
+                    }
+                }
+                .footer-list{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1.25rem;
+                        .title{
+                            color: #444A51;
+                            text-align: center;
+                            font-family: "Poppins", serif;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                        }
+                        .list{
+                            padding: 0 15%;
+                            display: flex;
+                            justify-content: center;
+                            row-gap: 1rem;
+                            column-gap: 0.625rem;
+                            flex-wrap: wrap;
+                            li{
+                                a{
+                                    color: #757575;
+                                    text-align: center;
+                                    font-family: "Poppins", sans-serif;
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer-bottom{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+            .social-media-accounts{
+                display: flex;
+                gap: 0.75rem;
+                align-items: center;
+            }
+            .copyright{
+                color: #A0A0A0;
+                font-family: "Poppins", sans-serif;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+            .paragraph{
+                color: #A0A0A0;
+                text-align: right;
+                font-family: "Poppins", sans-serif;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                a{
+                    color: #9747FF;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px){
+    .footer{
+        padding: 2.5rem 4rem 0;
+        display: flex;
+        justify-content: center;
+        .container{
+            max-width: 1312px;
+            width: 100%;
+            align-items: flex-start;
+            .footer-top{
+                flex-direction: row;
+                align-items: flex-start;
+                .NAOS{
+                    align-items: flex-start;
+                    width: 16rem;
+                    .NAOS-logo{
+                        padding: 0;
+                        margin-bottom: 2rem;
+                    }
+                    .NAOS-desc{
+                        padding: 0;
+                        text-align: left;
+                        padding-right: 25%;
+                    }
+                }
+                .line{
+                    display: inline-block;
+                    width: 1px;
+                    height: 380px;
+                    background-color: #E5DAD4;
+                }
+                .footer-main{
+                    padding: 0 2rem;
+                    flex-grow: 2;
+                    align-items: flex-start;
+                    .brends{
+                        gap: 2rem;
+                        .bioderma,
+                        .esthederm,
+                        .etatpur{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            border-radius: 10px;
+                            border: 1px solid #9CA3AF; 
+                            .social-media-accounts{
+                                display: flex;
+                                align-items: center;
+                                gap: 0.75rem;
+                            }
+                        }
+                        .bioderma{
+                            padding: 29.59px 16px 18px;
+                            gap: 22.29px;
+                            .bioderma-logo{
+                                width: 143px;
+                                height: 29.114px;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: contain;
+                                }
+                            }
+                        }
+                        .esthederm{
+                            padding: 18px;
+                            gap: 12px;
+                            .esthederm-logo{
+                                width: 139px;
+                                height: 51px;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: contain;
+                                }
+                            }
+                        }
+                        .etatpur{
+                            padding: 34.04px 43px 18px 42px;
+                            gap: 28.45px;
+                            .etatpur-logo{
+                                width: 90px;
+                                height: 18.51428px;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: contain;
+                                }
+                            }
+                        }
+                    }
+                    .footer-list{
+                        order: -1;
+                        flex-direction: row;
+                        gap: 4rem;
+                        div{
+                            gap: 0.75rem;
+                            align-items: flex-start;
+                            .list{
+                                padding: 0;
+                                flex-wrap: wrap;
+                                flex-direction: column;
+                                li{
+                                    a{
+                                        white-space: nowrap;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .footer-bottom{
+                padding: 1rem 0;
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-between;
+                .copyright{
+                    order: -1;
+                }
+            }
+        }
+    }
+}

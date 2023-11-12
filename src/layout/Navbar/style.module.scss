@@ -1,0 +1,43 @@
+.navbar{
+    display: none;
+    .container{
+        
+    }
+}
+@media (min-width: 768px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 2.8125rem;
+        border-bottom: 1px solid #ECEFF2;
+        display: flex;
+        justify-content: center;
+        .container{
+            max-width: 1312px;
+            width: 100%;
+            width: 100%;
+            .navbar-list{
+                display: flex;
+                justify-content: space-between;
+                li{
+                    padding: 20px 15px;
+                    a{
+                        white-space: nowrap;
+                        color: #444A51;
+                        font-family: "Poppins", sans-serif;
+                        font-size: 13px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 17.5px; 
+                    }
+                }
+                li:hover{
+                    a{
+                        color: #009BC7;
+                    }
+                }
+            }
+        }
+    }
+}

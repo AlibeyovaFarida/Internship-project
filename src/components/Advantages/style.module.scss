@@ -1,0 +1,52 @@
+.advantages{
+    padding: 1.25rem 1.875rem 1.25rem 0;
+    background-color: #FFC52D;
+    .container{
+        display: flex;
+        flex-direction: column;
+        .advantage{
+            gap: 0.5rem;
+            display: flex;
+            align-items: center;
+            p{
+                color: #000;
+                font-family: "Poppins", sans-serif;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+}
+@media (min-width:768px){
+    .advantages{
+        padding: 0 4rem;
+        display: flex;
+        justify-content: center;
+        .container{
+            max-width: 1312px;
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            .seperator{
+                width: 1px;
+                height: 43px;
+                background-color: #C5A54D;
+            }
+            :nth-child(1){
+                max-width: 263px;
+            }
+            :nth-child(3){
+                max-width: 222px;
+            }
+            :nth-child(5){
+                max-width: 346px;
+            }
+            :nth-child(7){
+                max-width: 263px;
+            }
+        }
+    }
+}
